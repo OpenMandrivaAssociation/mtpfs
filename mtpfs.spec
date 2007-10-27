@@ -1,12 +1,12 @@
 %define name	mtpfs
 %define version	0.6
-%define release	%mkrel 2
+%define release	%mkrel 3
 
 Summary:	FUSE filesystem that supports MTP devices
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-License:	GPL+
+License:	GPLv2+
 Group:		File tools
 URL:		http://www.adebenham.com/mtpfs/
 Source0:	http://www.adebenham.com/mtpfs/%{name}-%{version}.tar.gz
