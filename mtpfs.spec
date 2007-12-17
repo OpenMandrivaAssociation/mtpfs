@@ -10,7 +10,6 @@ License:	GPLv2+
 Group:		File tools
 URL:		http://www.adebenham.com/mtpfs/
 Source0:	http://www.adebenham.com/mtpfs/%{name}-%{version}.tar.gz
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	libmtp-devel
 BuildRequires:	fuse-devel
 BuildRequires:	libmad-devel
