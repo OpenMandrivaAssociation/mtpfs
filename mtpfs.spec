@@ -1,6 +1,6 @@
 %define name	mtpfs
-%define version	0.6
-%define release	%mkrel 3
+%define version	0.7
+%define release	%mkrel 1
 
 Summary:	FUSE filesystem that supports MTP devices
 Name:		%{name}
@@ -10,8 +10,9 @@ License:	GPLv2+
 Group:		File tools
 URL:		http://www.adebenham.com/mtpfs/
 Source0:	http://www.adebenham.com/mtpfs/%{name}-%{version}.tar.gz
+Patch0:		mtpfs-0.7-libmtp-0.3.0-build-fix.patch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-root
-BuildRequires:	libmtp-devel
+BuildRequires:	libmtp-devel >= 0.3.0
 BuildRequires:	fuse-devel
 BuildRequires:	libmad-devel
 BuildRequires:	id3tag-devel
@@ -23,7 +24,8 @@ MTPfs is a FUSE filesystem that supports reading and writing from any
 MTP device supported by libmtp.
 
 %prep
-%setup -q
+%setup -q -n %name-%version.orig
+%patch0 -p0
 
 %build
 %configure2_5x
