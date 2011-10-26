@@ -1,6 +1,6 @@
 %define name	mtpfs
 %define version	0.9
-%define release	%mkrel 2
+%define release	%mkrel 3
 
 Summary:	FUSE filesystem that supports MTP devices
 Name:		%{name}
