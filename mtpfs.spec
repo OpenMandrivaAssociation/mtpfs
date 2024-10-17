@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPLv2+
 Group:		File tools
-URL:		http://www.adebenham.com/mtpfs
+URL:		https://www.adebenham.com/mtpfs
 Source0:	http://www.adebenham.com/debian/%{name}-%{version}.tar.gz
 BuildRequires:	libmtp-devel >= 0.3.0
 BuildRequires:	fuse-devel
