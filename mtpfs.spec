@@ -10,6 +10,11 @@ License:	GPLv2+
 Group:		File tools
 URL:		https://www.adebenham.com/mtpfs
 Source0:	http://www.adebenham.com/debian/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libmtp-devel >= 0.3.0
 BuildRequires:	fuse-devel
 BuildRequires:	libmad-devel
